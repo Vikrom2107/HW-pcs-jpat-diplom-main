@@ -17,8 +17,8 @@ public class Client {
              BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()))
         ) {
             JsonObject product = new JsonObject();
-            product.addProperty("type", "ADD");
-            product.addProperty("task", "Бег");
+            product.addProperty("type", "RESTORE");
+            product.addProperty("task", "Обед");
             GsonBuilder builder = new GsonBuilder();
             Gson gson = builder.create();
             System.out.println(gson.toJson(product));

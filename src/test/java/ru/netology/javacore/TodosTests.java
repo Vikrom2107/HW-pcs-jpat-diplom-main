@@ -9,7 +9,7 @@ class TodosTests {
     void addTask() {
         todos.addTask("Бег");
 
-        String actual = todos.getTasks().get(0);
+        String actual = todos.getTasks().last();
         String expect = "Бег";
         Assertions.assertEquals(expect,actual);
     }
